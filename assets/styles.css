@@ -7,6 +7,12 @@
     justify-content: center;
 }
 
+.mid{
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
 .container{
     margin: 10%;
     padding: 1%;
