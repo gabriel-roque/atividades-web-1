@@ -35,22 +35,63 @@
 }
 
 #form-group-1 .form-control {
-    width: 33.333%;
-}
-
-#form-group-2 .form-control {
     width: 50%;
 }
 
+#form-group-2 .form-control {
+    width: 33.333%;
+}
+
 #form-group-3 .form-control {
+    width: 50%;
+}
+
+
+#form-group-4 .form-control {
+    width: 50%;
+}
+
+#form-group-5 .form-control {
+    width: 50%;
+}
+
+#form-group-6 .form-control {
+    width: 33.333%;
+}
+
+#form-group-7 .form-control {
+    width: 50%;
+}
+
+#form-group-8 .form-control {
     width: 100%;
 }
 
-#form-group-4 .form-control {
-    width: 6em;
+#form-group-9 .form-control {
+    width: 80%;
+}
+
+.p-m-3{
+    width: 150px;
+    float: right;
+}
+
+.mt-5{
+    margin-top: 2%;
+}
+
+.ml-5{
+    margin-left: 5%;
+}
+
+.ft{
+    padding: 2.5px;
 }
 
 .bg{
     background: #a7b4b4;
+    max-width: 500px;
+    min-width: 500px;
+    margin-left: 40%;
 }
 

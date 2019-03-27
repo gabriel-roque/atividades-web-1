@@ -3,9 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Form Web I</title>
-
     <link rel="stylesheet" href="assets/styles.css">
-
 </head>
 <body>
 
@@ -14,54 +12,117 @@
         <form>
             <div class="form-group" id="form-group-1">
                 <div class="form-control">
-                    <label for="field1">Field 1</label>
-                    <input name="field1" id="field1" placeholder="text1">
+                    <label for="nome">Nome:</label>
+                    <input class="ft" name="nome" id="nome" placeholder="Ex: Fulano">
                 </div>
                 <div class="form-control">
-                    <label for="field2">Field 2</label>
-                    <input name="field2" id="field2" placeholder="text2">
-                </div>
-                <div class="form-control">
-                    <label for="field3">Field 3</label>
-                    <select name="field3" id="field3">
-                        <option value="1">Option 1</option>
-                        <option value="2">Option 2</option>
-                    </select>
+                    <label for="prontuario">N de Prontuario:</label>
+                    <input class="ft" type="number" name="prontuario" id="prontuario" placeholder="213454">
                 </div>
             </div>
             <div class="form-group" id="form-group-2">
                 <div class="form-control">
-                    <label for="field4">Field 4</label>
-                    <input name="field4" id="field4" placeholder="text4">
+                    <label for="nascimento">Data de Nascimento:</label>
+                    <input type="date" name="nascimento" id="nascimento">
                 </div>
                 <div class="form-control">
-                    <label for="field5">Field 5</label>
-                    <input name="field5" id="field5" placeholder="text5">
+                    <label for="idade">Idade:</label>
+                    <input class="ft" name="idade" id="idade" placeholder="Ex: 23">
+                </div>
+                <div class="form-control">
+                    <label for="dateAt1">Data 1 Atendimento:</label>
+                    <input type="date" name="dateAt1" id="dateAt1">
                 </div>
             </div>
             <div class="form-group" id="form-group-3">
                 <div class="form-control">
-                    <label for="field6">Field 6</label>
-                    <textarea name="field6" id="field6"></textarea>
+                    <label for="resp">Responsavel:</label>
+                    <input class="ft" name="resp" id="resp">
+                </div>
+                <div class="form-control">
+                    <label for="parent">Parentesco:</label>
+                    <input class="ft" name="parent" id="parent">
                 </div>
             </div>
             <div class="form-group" id="form-group-4">
                 <div class="form-control">
-                    <input type="submit" value="OK" />
+                    <label for="endereco">Endereco:</label>
+                    <input class="ft" name="endereco" id="endereco">
+                </div>
+                <div class="form-control p-m-3">
+                    <label for="numeroEnd">Numero:</label>
+                    <input class="ft " name="numeroEnd" id="numeroEnd">
+                </div>
+            </div>
+            <div class="form-group" id="form-group-5">
+                <div class="form-control">
+                    <label for="bairro">Bairro:</label>
+                    <input class="ft" name="bairro" id="bairro">
                 </div>
                 <div class="form-control">
-                    <input type="button" value="CANCEL" />
+                    <label for="cidade">Cidade:</label>
+                    <input class="ft" name="cidade" id="cidade">
+                </div>
+            </div>
+            <div class="form-group" id="form-group-6">
+                <div class="form-control">
+                    <label for="tel">Telefone:</label>
+                    <input class="ft" name="tel" id="tel">
+                </div>
+                <div class="form-control">
+                    <label for="celular">Celular:</label>
+                    <input class="ft" name="celular" id="celular">
+                </div>
+                <div class="form-control">
+                    <label for="estado">Estado:</label>
+                    <select id="estado" name="estado" class="ft">
+                        <option>DF</option>
+                        <option>GO</option>
+                        <option>MG</option>
+                        <!--SEGUE TODOS OS ESTADOS DO BRASIL-->
+                    </select>
+                </div>
+            </div>
+            <div class="form-group" id="form-group-7">
+                <div class="form-control">
+                    <label for="covParet">Convidado ou Parente:</label>
+                    <input class="ft" name="covParet" id="covParet">
+                </div>
+            </div>
+            <div class="form-group" id="form-group-8">
+                <div class="form-control">
+                    <label for="obs">Observacao:</label>
+                    <textarea class="ft" name="obs" id="obs" rows="5"></textarea>
+                </div>
+            </div>
+            <div class="form-group" id="form-group-9">
+                <div class="form-control">
+                    <label for="localizar">Localizar:</label>
+                    <select class="ft" name="localizar" id="localizar">
+                        <option value="p1">Pessoa 1</option>
+                        <option value="p2">Pessoa 2</option>
+                        <option value="p3">Pessoa 3</option>
+                    </select>
+
+                </div>
+            </div>
+            <div class="form-group mt-5 center" id="form-group-10">
+                <div class="form-control ml-5">
+                    <button class="ft" type="submit">Salvar</button>
+                </div>
+                <div class="form-control ml-5">
+                    <a href="#"><button class="ft">Novo</button></a>
+                </div>
+                <div class="form-control ml-5">
+                    <button class="ft">Excluir</button>
+                </div>
+                <div class="form-control ml-5">
+                    <button class="ft">Fechar</button>
                 </div>
             </div>
         </form>
-
-
     </div>
-
 </div>
-
-
-
 
 </body>
 </html>
