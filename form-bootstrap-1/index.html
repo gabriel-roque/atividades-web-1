@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--CDN Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!--IS NOT PRESENT DEFAULT BOOTSTRAP-->
+    <link rel="stylesheet" href="assets/sass/styles.scss">
+
+    <title>Form Boostrap I</title>
+</head>
+<body>
+
+<div class="container mt-lg-5">
+    <h3>Cadastros</h3><hr>
+    <!--BREADCRUMB-->
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item active"><a href="#">Dashboard</a></li>
+            <li class="breadcrumb-item" aria-current="page">Cadastros</li>
+        </ol>
+    </nav>
+    <!--NAV COMPONETS FORM-->
+    <div class="d-flex justify-content-center">
+        <div class="w-90">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Cliente</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Preferências do Cliente</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Parceiro</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <!--FORM CLIENTE-->
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+
+                    <div class="row mt-3">
+                        <div class="col">
+                            <div class="row">
+                                <!--CODIGO-->
+                                <div class="col-2">
+                                    <div class="form-group">
+                                        <label for="id">Código</label>
+                                        <input type="email" class="form-control" id="id" value="869" disabled>
+                                    </div>
+                                </div>
+                                <!--END CODIGO-->
+
+                                <!--NOME-->
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label for="nome">Nome</label>
+                                        <input type="email" class="form-control" id="nome" placeholder="Nome Completo do Cliente">
+                                    </div>
+                                </div>
+                                <!--END NOME-->
+                            </div>
+                            <div class="row">
+                                <!--TELEFONE-->
+                                <div class="col-4">
+                                    <div class="form-group">
+                                        <label for="tel">Telefone</label>
+                                        <input type="text" class="form-control" id="tel" placeholder="Nº de Telefone" data-mask="(00) 00000-0000">
+                                    </div>
+                                </div>
+                                <!--END TELEFONE-->
+
+                                <!--TEL FIXO-->
+                                <div class="col-4">
+                                    <div class="form-group">
+                                        <label for="telfixo">Telefone Fixo</label>
+                                        <input type="text" class="form-control" id="telfixo" placeholder="Nº Telefone Fixo" data-mask="(00) 0000-0000">
+                                    </div>
+                                </div>
+                                <!--END TEL FIXO-->
+
+                                <!--CEP-->
+                                <div class="col-4">
+                                    <div class="form-group">
+                                        <label for="cep">CEP</label>
+                                        <input type="text" class="form-control" id="cep" placeholder="70-695-155" data-mask="00-000-000">
+                                    </div>
+                                </div>
+                                <!--END CEP-->
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="row">
+                                <!--EMAIL-->
+                                <div class="col-7">
+                                    <div class="form-group">
+                                        <label for="email">E-mail</label>
+                                        <input type="email" class="form-control" id="email" placeholder="nome@gmail.com">
+                                    </div>
+                                </div>
+                                <!--END EMAIL-->
+
+                                <!--CPF-->
+                                <div class="col-5">
+                                    <div class="form-group">
+                                        <label for="cpf">CPF</label>
+                                        <input type="text" class="form-control" id="cpf" placeholder="000.000.000-00" data-mask="000.000.000-00">
+                                    </div>
+                                </div>
+                                <!--END CPF-->
+                            </div>
+                            <div class="row">
+                                <!--LONGRADURA-->
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label for="longradura">Longradura</label>
+                                        <input type="text" class="form-control" id="longradura" placeholder="Ex: Rua 1596">
+                                    </div>
+                                </div>
+                                <!--END LONGRADURA-->
+
+                                <!--Nº-->
+                                <div class="col-2">
+                                    <div class="form-group">
+                                        <label for="numero">Nº</label>
+                                        <input type="text" class="form-control" id="numero" placeholder="12">
+                                    </div>
+                                </div>
+                                <!--Nº END-->
+
+                                <!--BAIRRO-->
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <label for="bairro">Longradura</label>
+                                        <input type="text" class="form-control" id="bairro" placeholder="Ex: Área Nobre">
+                                    </div>
+                                </div>
+                                <!--END BAIRRO-->
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--END FORM CLIENTE-->
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">COMPONENT HERE</div>
+                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">COMPONENT HERE</div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+
+<!--JS MASK-->
+<script src="assets/js/jquery.mask.js"></script>
+
+</html>
