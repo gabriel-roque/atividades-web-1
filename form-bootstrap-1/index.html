@@ -12,7 +12,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <!--IS NOT PRESENT DEFAULT BOOTSTRAP-->
-    <link rel="stylesheet" href="assets/sass/styles.scss">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- FONT AWESOME ICONS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
     <title>Form Boostrap I</title>
 </head>
@@ -23,8 +26,8 @@
     <!--BREADCRUMB-->
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item active"><a href="#">Dashboard</a></li>
-            <li class="breadcrumb-item" aria-current="page">Cadastros</li>
+            <li class="breadcrumb-item active"><i class="fas fa-th-large text-primary"></i> <a href="#">Dashboard</a></li>
+            <li class="breadcrumb-item" aria-current="page"><i class="fas fa-edit"></i> Cadastros</li>
         </ol>
     </nav>
     <!--NAV COMPONETS FORM-->
@@ -94,6 +97,39 @@
                                 </div>
                                 <!--END CEP-->
                             </div>
+                            <div class="row">
+                                <!-- CIDADE -->
+                                <div class="col-5">
+                                    <div class="form-group">
+                                        <label for="cidade">Cidade</label>
+                                        <input type="text" class="form-control" id="cidade" placeholder="Santa Maria">
+                                    </div>
+                                </div>
+                                <!-- END CIDADE -->
+
+                                <!-- UF -->
+                                <div class="col-2">
+                                    <div class="form-group">
+                                        <label for="uf">UF</label>
+                                        <input type="text" class="form-control" id="uf" placeholder="UF">
+                                    </div>
+                                </div>
+                                <!-- END UF -->
+
+                                <!-- STATUS -->
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label for="status">Status</label>
+                                        <select class="form-control" id="status">
+                                            <option>Solteiro(a)</option>
+                                            <option>Casado(a)</option>
+                                            <option>Divorsiado(a)</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <!-- END STATUS -->
+                            </div>
+
                         </div>
                         <div class="col">
                             <div class="row">
@@ -145,7 +181,14 @@
                             </div>
                         </div>
                     </div>
-
+                        <div class="d-flex justify-content-end">
+                            <span class="m-1">
+                                <button type="button" class="btn btn-danger">Resetar</button>
+                            </span>
+                            <span class="m-1">
+                                <button type="button" class="btn btn-success">Next</button>
+                            </span>
+                        </div>
                 </div>
                 <!--END FORM CLIENTE-->
                 <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">COMPONENT HERE</div>
